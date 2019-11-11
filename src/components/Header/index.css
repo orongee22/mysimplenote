@@ -1,0 +1,61 @@
+div.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    /* background-color: #D1D8D1; */
+    border-bottom: 1px solid #C0C6C1;
+}
+
+.header > .title a{
+    color: inherit;
+    text-decoration: none;
+    transition: all .09s
+}
+.header > .title a:hover{
+    color: #F2C879;
+}
+div.header > .title img{
+    vertical-align: bottom;
+    padding-right: 4px;
+}
+div.header > .title a:hover img{
+    opacity: 0.5;
+}
+
+div.header > div.title{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.header > .btn-group{
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.header .btn-group button{
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    font-weight: lighter;
+    color: #fff;
+    background-color: #175973;
+    border-radius: 30px;
+    outline: none;
+}
+.header .btn-group::after{
+    display: inline-block;
+    margin-top: -4px;
+    margin-left: 4px;
+    content:'새 노트 작성';
+    font-size: 14px;
+    vertical-align: middle;
+}
+.header .btn-group:hover{
+   opacity: 0.6;
+}
+.header .btn-group:active{
+    background-color: rgb(241, 241, 241)
+}

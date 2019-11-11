@@ -1,0 +1,31 @@
+div.list-item{
+    padding: 1.275rem 1.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid #C0C6C1
+}
+
+div.list-item > div.title{
+    margin-bottom: 20px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+div.list-item > div.list-item-contents{
+    font-size: 14px;
+    color: #A7ADA8;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+div.list-item:hover{
+    background-color: #175973
+}
+div.list-item:hover div.title, div.list-item:active div.title, div.list-item:hover div.list-item-contents, div.list-item:active div.list-item-contents, div.list-item.active div.list-item-contents,div.list-item.active div.title{
+    color: #fff;
+}
+div.list-item.active{
+    background-color: #175973
+}
+

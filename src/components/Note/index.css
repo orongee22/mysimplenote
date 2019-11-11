@@ -1,0 +1,35 @@
+div.note{
+    width: 100%;
+    overflow-y: auto;
+    /* height: calc(100vh-40px); */
+    padding: 40px 70px 0 70px;
+}
+
+div.note > input.title{
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: inherit;
+    color: #175973;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+}
+
+div.note > textarea.note-contents{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: inherit;
+    border: none;
+    resize: none;
+    outline: none;
+    overflow: auto;
+}

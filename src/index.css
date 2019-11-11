@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Gothic+A1&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Gothic A1', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  background-color: none;
+  border: none;
+
+}

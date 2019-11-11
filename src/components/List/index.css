@@ -1,0 +1,7 @@
+div.list{
+    overflow-y: scroll;
+    min-width: 360px;
+    width: 360px;
+    height: 100vh;
+    border-right: 1px solid #C0C6C1;
+}
