@@ -20,12 +20,15 @@ div.list-item > div.list-item-contents{
 }
 
 div.list-item:hover{
-    background-color: #175973
+    background-color: #eee;
 }
-div.list-item:hover div.title, div.list-item:active div.title, div.list-item:hover div.list-item-contents, div.list-item:active div.list-item-contents, div.list-item.active div.list-item-contents,div.list-item.active div.title{
+div.list-item:hover div.title,div.list-item:hover div.list-item-contents{
+    color: #175973
+}
+div.list-item:active div.title, div.list-item:active div.list-item-contents, div.list-item.active div.list-item-contents,div.list-item.active div.title{
     color: #fff;
 }
-div.list-item.active{
+div.list-item.active, div.list-item:active{
     background-color: #175973
 }
 

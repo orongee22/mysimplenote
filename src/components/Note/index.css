@@ -4,19 +4,32 @@ div.note{
     /* height: calc(100vh-40px); */
     padding: 40px 70px 0 70px;
 }
-
-div.note > input.title{
-    display: block;
+div.note > .title-wrap{
     width: 100%;
-    padding-bottom: 10px;
     margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+div.note > .title-wrap >  input.title{
+    display: inline-block;
+    width: calc(100% - 40px);
+    padding-bottom: 10px;
+    
     font-size: 30px;
     font-weight: 600;
     font-family: inherit;
     color: #175973;
     border: none;
-    border-bottom: 1px solid #ddd;
+    
     outline: none;
+}
+div.note > .title-wrap > button.remove-btn{
+    display: inline-block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    background-image: url("../../static/garbage.png");
+    background-size: 30px;
 }
 
 div.note > textarea.note-contents{

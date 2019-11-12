@@ -1,3 +1,45 @@
+div.new-note{
+    height: 30px;
+    padding: 25px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee
+}
+
+
+div.new-note > button { 
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    font-weight: lighter;
+    color: #175973;
+    background-color: #fff;
+    border: 2px solid #175973;
+    border-radius: 30px;
+    outline: none;
+    transition: all .3s;
+}
+div.new-note:hover > button, div.new-note:active > button{
+    background-color: #175973;
+    border: none;
+    color: #fff
+}
+
+div.new-note::after{
+    display: inline-block;
+    /* width: 100%; */
+    height: initial;
+    margin-top: -4px;
+    margin-left: 10px;
+    content:'새 노트 작성';
+    font-size: 20px;
+    vertical-align: middle;
+    color: #175973;
+    transition: all .3s;
+}
+div.new-note:hover::after{
+    opacity: 0.8;
+    text-decoration: underline;
+}
 div.list{
     overflow-y: scroll;
     min-width: 360px;

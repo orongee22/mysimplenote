@@ -9,9 +9,6 @@ class Header extends Component{
                 <div className="title">
                     <span><a href=""><img src={logo} alt="logo" width="40" height="40" />한 줄 노트</a></span>
                 </div>
-                <div className="btn-group">
-                    <button title="노트 작성">+</button>
-                </div>
             </div>
         )
     }

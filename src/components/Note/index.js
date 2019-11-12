@@ -3,16 +3,23 @@ import './index.css';
 
 class Note extends React.Component{
     render(){
-        // console.log(this.props.note.idx);
-        // console.log(this.props.note.title);
-        const { note } = this.props;
-        // const{title, contents} = note;
-        console.log(note);
-        // console.log(title);
+        const { note, onEditNote } = this.props;
+        const {title, contents} = note;
         return (
             <div className="note">
-                <input type="text" className="title" value={this.props.note.title}></input>
-                <textarea className="note-contents" value={this.props.note.title}></textarea>
+                <div className="title-wrap">
+                    <input 
+                        type="text" className="title" 
+                        value={title} 
+                        onChange={(e) => onEditNote('title', e)} 
+                    />
+                    <button type="button" className="remove-btn" onClick={this.props.onDeleteNote} />
+                </div>
+                <textarea
+                    className="note-contents" 
+                    value={contents} 
+                    onChange={(e) => onEditNote('contents', e)} 
+                />
             </div>
         )
     }
